@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_form_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rahmatridham.mentoringproject.FormPage">
+
+    <TextView
+        android:text="Form Mahasiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Nama Lengkap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textViewNamaLengkap" />
+
+    <TextView
+        android:text="NIM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewNims"
+        android:layout_below="@+id/textViewNamaLengkap"
+        android:layout_alignLeft="@+id/textViewNamaLengkap"
+        android:layout_alignStart="@+id/textViewNamaLengkap" />
+
+    <TextView
+        android:text="Nomor Telpon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAlamats"
+        android:layout_alignLeft="@+id/textViewAlamats"
+        android:layout_alignStart="@+id/textViewAlamats"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewNomorTelpons" />
+
+    <TextView
+        android:text="Jenis Kelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNomorTelpons"
+        android:layout_alignLeft="@+id/textViewNomorTelpons"
+        android:layout_alignStart="@+id/textViewNomorTelpons"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView9" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText3Nama"
+        android:textSize="12sp"
+        android:layout_alignBaseline="@+id/textViewNamaLengkap"
+        android:layout_alignBottom="@+id/textViewNamaLengkap"
+        android:layout_toRightOf="@+id/textViewNamaLengkap"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Nama Lengkap" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText2Alamat"
+        android:textSize="12sp"
+        android:layout_below="@+id/editText4Nim"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/editText4Nim"
+        android:layout_alignStart="@+id/editText4Nim"
+        android:hint="Alamat" />
+
+    <TextView
+        android:text="Alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewAlamats"
+        android:layout_alignBaseline="@+id/editText2Alamat"
+        android:layout_alignBottom="@+id/editText2Alamat"
+        android:layout_alignLeft="@+id/textViewNims"
+        android:layout_alignStart="@+id/textViewNims" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editText5NoTelp"
+        android:textSize="12sp"
+        android:layout_alignBaseline="@+id/textViewNomorTelpons"
+        android:layout_alignBottom="@+id/textViewNomorTelpons"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/editText2Alamat"
+        android:layout_alignStart="@+id/editText2Alamat"
+        android:hint="No Telpon"
+        android:inputType="number" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText4Nim"
+        android:textSize="12sp"
+        android:layout_below="@+id/editText3Nama"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/editText3Nama"
+        android:layout_alignStart="@+id/editText3Nama"
+        android:hint="NIM" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/editText5NoTelp"
+        android:layout_alignStart="@+id/editText5NoTelp"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:text="Laki-Laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2Laki"
+            android:layout_weight="1"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:text="Perempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonCewe"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:duplicateParentState="false" />
+    </RadioGroup>
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSave"
+        android:elevation="0dp"
+        android:layout_marginTop="430dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

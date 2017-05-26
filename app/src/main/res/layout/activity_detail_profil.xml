@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_profil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rahmatridham.mentoringproject.DetailProfil">
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@android:color/background_dark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView2"
+        android:layout_height="200dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/man"
+        android:id="@+id/imageViewGambar"
+        android:layout_marginTop="142dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNamaLengkap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textViewNim" />
+
+    <TextView
+        android:text="Nama Lengkap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textViewNamaLengkap"
+        android:textSize="24sp"
+        android:layout_below="@+id/imageViewGambar"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#d22c2c2c"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            app:srcCompat="@android:drawable/ic_menu_call"
+            android:id="@+id/imageViewCall"
+            android:layout_marginLeft="53dp"
+            android:layout_marginStart="53dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            app:srcCompat="@android:drawable/ic_dialog_email"
+            android:id="@+id/imageViewMessage"
+            android:layout_marginRight="51dp"
+            android:layout_marginEnd="51dp"
+            android:layout_height="70dp"
+            android:layout_width="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:text="Call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/imageViewCall"
+            android:layout_alignRight="@+id/imageViewCall"
+            android:layout_alignEnd="@+id/imageViewCall"
+            android:layout_alignLeft="@+id/imageViewCall"
+            android:layout_alignStart="@+id/imageViewCall"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:text="Message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/imageViewMessage"
+            android:layout_alignLeft="@+id/imageViewMessage"
+            android:layout_alignStart="@+id/imageViewMessage"
+            android:layout_alignRight="@+id/imageViewMessage"
+            android:layout_alignEnd="@+id/imageViewMessage"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+</RelativeLayout>
